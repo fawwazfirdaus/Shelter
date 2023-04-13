@@ -15,8 +15,6 @@
 		7934609A29DA24A800247942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7934609929DA24A800247942 /* Assets.xcassets */; };
 		7934609D29DA24A800247942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7934609B29DA24A800247942 /* LaunchScreen.storyboard */; };
 		79B81B8129E899FC00CE8BB5 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B81B8029E899FC00CE8BB5 /* CustomTabBar.swift */; };
-		79B81B8329E89E7200CE8BB5 /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B81B8229E89E7200CE8BB5 /* CustomTabBarItem.swift */; };
-		79B81B8729E89F0200CE8BB5 /* CustomUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B81B8629E89F0200CE8BB5 /* CustomUITabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +28,6 @@
 		7934609C29DA24A800247942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7934609E29DA24A800247942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B81B8029E899FC00CE8BB5 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		79B81B8229E89E7200CE8BB5 /* CustomTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
-		79B81B8629E89F0200CE8BB5 /* CustomUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +65,6 @@
 				7934609429DA24A700247942 /* ViewController.swift */,
 				7934609629DA24A700247942 /* Main.storyboard */,
 				79B81B8029E899FC00CE8BB5 /* CustomTabBar.swift */,
-				79B81B8229E89E7200CE8BB5 /* CustomTabBarItem.swift */,
-				79B81B8629E89F0200CE8BB5 /* CustomUITabBarController.swift */,
 				7929D5EF29E81366008AAECE /* SignUpViewController.swift */,
 				7934609929DA24A800247942 /* Assets.xcassets */,
 				7934609B29DA24A800247942 /* LaunchScreen.storyboard */,
@@ -150,9 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B81B8729E89F0200CE8BB5 /* CustomUITabBarController.swift in Sources */,
 				7934609529DA24A700247942 /* ViewController.swift in Sources */,
-				79B81B8329E89E7200CE8BB5 /* CustomTabBarItem.swift in Sources */,
 				79B81B8129E899FC00CE8BB5 /* CustomTabBar.swift in Sources */,
 				7934609129DA24A700247942 /* AppDelegate.swift in Sources */,
 				790633F729E81A4200CCAA88 /* SignUpViewController.swift in Sources */,

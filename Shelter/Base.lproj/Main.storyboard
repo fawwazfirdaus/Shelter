@@ -398,8 +398,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.158909631" green="0.3144933956" blue="0.16206902579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="tintColor" red="0.158909631" green="0.3144933956" blue="0.16206902579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.96198453610000001" green="0.96198453610000001" blue="0.96198453610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="selectedImageTintColor" red="0.65671953220000001" green="1" blue="0.42246163949999999" alpha="0.92997980440000005" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
