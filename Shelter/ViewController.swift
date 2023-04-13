@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
     @IBOutlet var pNumberTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var signUpButton: UIButton!
+    @IBOutlet var logInButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,16 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         let attributedTitle = NSMutableAttributedString(string: part1, attributes: part1Attributes)
         attributedTitle.append(NSAttributedString(string: part2, attributes: part2Attributes))
         signUpButton.setAttributedTitle(attributedTitle, for: .normal)
+        
+        // Creating radius corner for the login button
+        logInButton.layer.cornerRadius = 25
+        logInButton.layer.masksToBounds = true
+        
+        let logInButtonText = "Log In"
+        let attributedTitleTwo = NSMutableAttributedString(string: logInButtonText, attributes: part2Attributes)
+        logInButton.setAttributedTitle(attributedTitleTwo, for: .normal)
+        
+        
     }
 
     
