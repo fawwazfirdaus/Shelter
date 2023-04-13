@@ -14,8 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Thread.sleep(forTimeInterval: 1.0) // Adjust the time interval to your desired duration (in seconds)
+        
         return true
     }
+
 
     // MARK: UISceneSession Lifecycle
 
