@@ -350,6 +350,24 @@
             <point key="canvasLocation" x="2156" y="-54"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="k5Z-39-n8k">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tL-g9-FXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController modalPresentationStyle="fullScreen" id="6Ci-KU-wIR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pEI-WP-HLE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="k8e-Fe-31w"/>
+                        <color key="backgroundColor" red="0.65671953220000001" green="1" blue="0.42246163949999999" alpha="0.92997980440000005" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.158909631" green="0.3144933956" blue="0.16206902579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="heart.fill" catalog="system" id="o0t-LV-byQ"/>
+                    <navigationItem key="navigationItem" id="RlH-E3-jka"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="953" y="1413"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="aPq-Qf-4Y4">
             <objects>
                 <viewController id="But-a4-loJ" sceneMemberID="viewController">
@@ -361,7 +379,7 @@
                         <color key="tintColor" red="0.158909631" green="0.3144933956" blue="0.16206902579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="ONx-Yv-ckt">
-                        <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
+                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="large"/>
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </viewController>
@@ -381,12 +399,12 @@
                         <color key="tintColor" red="0.158909631" green="0.3144933956" blue="0.16206902579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="m18-SN-Jr6">
-                        <imageReference key="image" image="gearshape" catalog="system" symbolScale="large"/>
+                        <imageReference key="image" image="gearshape.fill" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioP-51-7V8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1182" y="1413"/>
+            <point key="canvasLocation" x="1639" y="1413"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lyK-AC-a4M">
@@ -404,7 +422,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="But-a4-loJ" kind="relationship" relationship="viewControllers" id="hAo-18-UAe"/>
-                        <segue destination="J0l-3y-52k" kind="relationship" relationship="viewControllers" id="XGd-1z-CMM"/>
+                        <segue destination="6Ci-KU-wIR" kind="relationship" relationship="viewControllers" id="lRd-sw-96a"/>
+                        <segue destination="J0l-3y-52k" kind="relationship" relationship="viewControllers" id="ryq-gD-fdK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djT-fK-Qx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -416,8 +435,9 @@
         <segue reference="gUy-w8-UGj"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="gearshape" catalog="system" width="128" height="123"/>
-        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
