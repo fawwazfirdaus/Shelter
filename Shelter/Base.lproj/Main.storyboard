@@ -352,7 +352,6 @@
         <!--View Controller-->
         <scene sceneID="k5Z-39-n8k">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6tL-g9-FXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController modalPresentationStyle="fullScreen" id="6Ci-KU-wIR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pEI-WP-HLE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
@@ -364,6 +363,7 @@
                     <tabBarItem key="tabBarItem" title="" image="heart.fill" catalog="system" id="o0t-LV-byQ"/>
                     <navigationItem key="navigationItem" id="RlH-E3-jka"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tL-g9-FXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="953" y="1413"/>
         </scene>
@@ -406,10 +406,10 @@
             </objects>
             <point key="canvasLocation" x="1639" y="1413"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="lyK-AC-a4M">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="mda-wc-9AP" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="mda-wc-9AP" customClass="CustomTabBarController" customModule="Shelter" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="pqq-7B-cxG"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k1h-bl-4nQ" customClass="CustomTabBar" customModule="Shelter" customModuleProvider="target">
@@ -418,7 +418,7 @@
                         <color key="backgroundColor" red="0.158909631" green="0.3144933956" blue="0.16206902579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.96198453610000001" green="0.96198453610000001" blue="0.96198453610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="selectedImageTintColor" red="0.65671953220000001" green="1" blue="0.42246163949999999" alpha="0.92997980440000005" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.007470454124" green="0.56814236110000005" blue="0.0029851135159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="But-a4-loJ" kind="relationship" relationship="viewControllers" id="hAo-18-UAe"/>
@@ -432,7 +432,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gUy-w8-UGj"/>
+        <segue reference="8fa-mk-c4l"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>

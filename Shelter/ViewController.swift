@@ -22,6 +22,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         pNumberTextField.delegate = self
         passwordTextField.delegate = self
         
+        pNumberTextField.addShadow()
+        passwordTextField.addShadow() // Add drop shadow to the password text field
+        
         // Dismiss the keyboard when tapping outside the UITextField
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tapGesture.cancelsTouchesInView = true
@@ -51,9 +54,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         let logInButtonText = "Log In"
         let attributedTitleTwo = NSMutableAttributedString(string: logInButtonText, attributes: part2Attributes)
         logInButton.setAttributedTitle(attributedTitleTwo, for: .normal)
-        
-        
     }
+
 
     
     @objc func dismissKeyboard() {

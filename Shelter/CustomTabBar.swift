@@ -9,9 +9,9 @@ import UIKit
 
 class CustomTabBar: UITabBar {
 
-    @IBInspectable var tabBarHeight: CGFloat = 60.0 // You can adjust this value to your desired height
-    @IBInspectable var horizontalInset: CGFloat = 16.0 // Horizontal gap on the left and right sides
-    @IBInspectable var bottomInset: CGFloat = 35.0 // Vertical gap at the bottom of the tab bar
+    @IBInspectable var tabBarHeight: CGFloat = 60.0
+    @IBInspectable var horizontalInset: CGFloat = 16.0
+    @IBInspectable var bottomInset: CGFloat = 35.0
 
     override func sizeThatFits(_ size: CGSize) -> CGSize {
         var newSize = super.sizeThatFits(size)
@@ -40,8 +40,16 @@ class CustomTabBar: UITabBar {
         itemPositioning = .fill
         itemWidth = (frame.width - 2 * horizontalInset) / CGFloat(items?.count ?? 1)
         itemSpacing = 0
+        
+        for item in items ?? [] {
+            item.image = item.image?.withRenderingMode(.alwaysTemplate)
+            item.setTitleTextAttributes([.foregroundColor: UIColor.gray], for: .normal)
+            item.setTitleTextAttributes([.foregroundColor: UIColor.red], for: .selected)
+        }
     }
-    
 }
+
+
+
 
 
