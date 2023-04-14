@@ -9,24 +9,55 @@ import UIKit
 
 class SignUpViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizerDelegate {
 
-    @IBOutlet var fNTextField: UITextField!
-    @IBOutlet var lnTextField: UITextField!
+
     @IBOutlet var pNumberTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var cPasswordTextField: UITextField!
     @IBOutlet var haveAccountButton: UIButton!
     @IBOutlet var signUpButton: UIButton!
     
+    @IBOutlet var pNumberTextFieldContainer: UIView!
+    @IBOutlet var passwordTextFieldContainer: UIView!
+    @IBOutlet var cPasswordTextFieldContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Set the UITextField delegate
-        fNTextField.delegate = self
-        lnTextField.delegate = self
         pNumberTextField.delegate = self
         passwordTextField.delegate = self
         cPasswordTextField.delegate = self
+        
+        pNumberTextField.backgroundColor = .clear
+        passwordTextField.backgroundColor = .clear
+        cPasswordTextField.backgroundColor = .clear
+        
+        let cornerRadius: CGFloat = 10.0 // Change this value to adjust the corner radius
+        
+        pNumberTextFieldContainer.addShadow(cornerRadius: cornerRadius)
+        passwordTextFieldContainer.addShadow(cornerRadius: cornerRadius)
+        cPasswordTextFieldContainer.addShadow(cornerRadius: cornerRadius)
+        
+        func setThickerPlaceholder(for textField: UITextField, placeholderText: String) {
+            let attributes: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: textField.font?.pointSize ?? 17, weight: .bold),
+                .foregroundColor: UIColor.gray
+            ]
+            textField.attributedPlaceholder = NSAttributedString(string: placeholderText, attributes: attributes)
+        }
+        
+        setThickerPlaceholder(for: pNumberTextField, placeholderText: "Phone Number")
+        setThickerPlaceholder(for: passwordTextField, placeholderText: "Password")
+        setThickerPlaceholder(for: cPasswordTextField, placeholderText: "Confirm Password")
+
+        pNumberTextField.layer.borderColor = UIColor.black.cgColor
+        pNumberTextField.layer.borderWidth = 1.0
+
+        passwordTextField.layer.borderColor = UIColor.black.cgColor
+        passwordTextField.layer.borderWidth = 1.0
+        
+        cPasswordTextField.layer.borderColor = UIColor.black.cgColor
+        cPasswordTextField.layer.borderWidth = 1.0
         
         // Dismiss the keyboard when tapping outside the UITextField
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
@@ -76,15 +107,5 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIGestureReco
         return true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
