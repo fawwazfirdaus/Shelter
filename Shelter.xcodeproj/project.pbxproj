@@ -18,6 +18,7 @@
 		79F13E9529E901610096BF63 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F13E9429E901610096BF63 /* CustomTabBarController.swift */; };
 		79F13E9929E9099B0096BF63 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F13E9829E9099B0096BF63 /* UITextField+Extensions.swift */; };
 		79F13E9D29E93CD70096BF63 /* TransparentContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F13E9C29E93CD70096BF63 /* TransparentContainerView.swift */; };
+		79F13EA129E95E8B0096BF63 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F13EA029E95E8B0096BF63 /* HealthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		79F13E9429E901610096BF63 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		79F13E9829E9099B0096BF63 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		79F13E9C29E93CD70096BF63 /* TransparentContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentContainerView.swift; sourceTree = "<group>"; };
+		79F13EA029E95E8B0096BF63 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				79B81B8029E899FC00CE8BB5 /* CustomTabBar.swift */,
 				79F13E9429E901610096BF63 /* CustomTabBarController.swift */,
 				79F13E9829E9099B0096BF63 /* UITextField+Extensions.swift */,
+				79F13EA029E95E8B0096BF63 /* HealthViewController.swift */,
 				79F13E9C29E93CD70096BF63 /* TransparentContainerView.swift */,
 				7929D5EF29E81366008AAECE /* SignUpViewController.swift */,
 				7934609929DA24A800247942 /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F13E9929E9099B0096BF63 /* UITextField+Extensions.swift in Sources */,
+				79F13EA129E95E8B0096BF63 /* HealthViewController.swift in Sources */,
 				79F13E9D29E93CD70096BF63 /* TransparentContainerView.swift in Sources */,
 				7934609529DA24A700247942 /* ViewController.swift in Sources */,
 				79B81B8129E899FC00CE8BB5 /* CustomTabBar.swift in Sources */,
